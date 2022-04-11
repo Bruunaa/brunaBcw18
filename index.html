@@ -15,17 +15,18 @@
 
 </head>
 
-<body style="font-family: roboto;">
+<body>
     <header>
-        <nav>
-            <a href="#somos"> Quem somos neste <strong>BCW18</strong></a> |
-            <a href="#cronograma">Cronograma do <strong>BCW18</strong></a> |
-            <a href="#dicas">Dicas do team</a> <strong>BCW18</strong> |
-            <a href="#trabalho">Orientações de Trabalho como Dev</a> |
-        </nav>
+        <ul>
+            <li><a href="#cadastro"> Cadastro</a> |</li>
+            <li><a href="#nivel">Nível Escolar</a> |</li>
+            <li><a href="#experiencia1">Sua Experiência</a>|</li>
+            <li><a href="#experiencia2">Descrição da Experiência</a> |</li>
+        </ul>
+
     </header>
     <main>
-        <div style="width: 650px">
+        <div class="divisorbase" id="trajetoria">
             <h1>Trajetória de</h1>
             <table>
                 <!-- tabela, tr = table row (linha), td = table divisor (coluna) -->
@@ -72,8 +73,8 @@
 
             </table>
         </div>
-        <div>
-            <form action="#" method="post">
+        <div class="divisorbase" id="cadastro">
+            <form action="#" method="">
                 <div>
                     <input type="hidden" id="id"> <!-- Trás uma informação semprecisar mostrar na tela -->
                 </div>
@@ -102,8 +103,8 @@
                     <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14" >
                 </div> <br>
 
-                <div>
-                    <label for="educacao">Nível Escolar:</label>
+                <div  id="nivel">
+                    <label for="educacao">Nível Escolar:</label><br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="f1"> Fundamental <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Médio  <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="b1"> Bacharel  <br>
@@ -114,8 +115,27 @@
                     <input type="radio" name="escolaridade" id="escolaridade" value="p3"> Doutorado  <br>
                 </div>
 
+                <div id="experiencia1">
+                    <label for="esperiencia">Qual foi a sua experiencia com programação:</label>
+                    <input type="range" id="experiencia" min="1" max="50" oninput="display.value=value" onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value" onchange="experiencia.value=value" maxlength="3" size="3">
+                </div>
+    
+                <div id="experiencia2">
+                    <label for="descricaoo">Descrição da Experiência: </label><br>
+                    <textarea id="descricao" cols="70" rows="5" placeholder="Descreva as Tecnologias cpnhecidas: "></textarea>
+                </div>
+        
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+
+            </div>
             </form>
-        </div>
+
+
+
     </main>
     <footer>
     </footer>
