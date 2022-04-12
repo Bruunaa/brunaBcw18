@@ -16,62 +16,56 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+        <p>Turma de desenvolvimento Web Full Stack da Soul Code Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
-            <li><a href="#cadastro"> Cadastro</a> |</li>
-            <li><a href="#nivel">Nível Escolar</a> |</li>
-            <li><a href="#experiencia1">Sua Experiência</a>|</li>
-            <li><a href="#experiencia2">Descrição da Experiência</a> |</li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#trajetoria">Trajetória</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#trabalho">Orientações</a></li>
         </ul>
-
     </header>
     <main>
-        <div class="divisorbase" id="trajetoria">
-            <h1>Trajetória de</h1>
-            <table>
-                <!-- tabela, tr = table row (linha), td = table divisor (coluna) -->
-                <tr>
-                    <th> <strong>FASE</strong></th>
-                    <th> <strong>Descrição</strong></th>
-                    <th><strong>Imagem</strong></th>
-                </tr>
-                <tr>
-                    <td>Primeira</td>
-                    <td>Inscrição no site oficial,execução do teste de lógica, curso da trilha zero e montagem do Pitch.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem3.jpg" alt="Ato de Inscrição" width="180px" height="180px">
-                            <figcaption>Fig.1 - Ato de inscrição.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda</td>
-                    <td>Trilha 0 e entrevista com o recrutador para avaliação da bolsa, nesta fase se analisa a
-                        elegibilidade para a bolsa de estudos perante os clientes e o candidato.</td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem2.jpg" alt="Testes de lógica para seleção" width="180px"
-                                height="180px">
-                            <figcaption>Fig.2 - Testes de Lógica.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Terceira</td>
-                    <td>Uma dinâmica gameficada onde em grupo tinhamos que resolver alguns testes para conseguir enfim,
-                        recuprar os dados da empresa hackeada.</td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem1.jpg" alt="Etapa Finalizada" width="180px" height="180px">
-                            <figcaption>Fig.3 - Etapa Finalizada</figcaption>
-                        </figure>
-                    </td>
-
-                </tr>
-
-            </table>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem3.jpg">
+                        <img src="/img/imagem3.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
+                        Inscrição no site oficial,execução do teste de lógica, curso da trilha zero e montagem do Pitch.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem2.jpg">
+                        <img src="/img/imagem2.jpg" alt="Fase 2">
+                    </a>
+                    <div class="desc">
+                        Trilha 0 e entrevista com o recrutador para avaliação da bolsa, nesta fase se analisa a
+                        elegibilidade para a bolsa de estudos perante os clientes e o candidato.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem1.jpg">
+                        <img src="/img/imagem1.jpg" alt="Fase 3">
+                    </a>
+                    <div class="desc">
+                        Uma dinâmica gameficada onde em grupo tinhamos que resolver alguns testes para conseguir enfim,
+                        recuprar os dados da empresa hackeada.
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="divisorbase" id="cadastro">
             <form action="#" method="">
@@ -100,42 +94,41 @@
 
                 <div>
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14" >
+                    <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
                 </div> <br>
 
-                <div  id="nivel">
-                    <label for="educacao">Nível Escolar:</label><br>
+                <div>
+                    <label for="escolaridade">Nível Escolar:</label><br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="f1"> Fundamental <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Médio  <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="b1"> Bacharel  <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="t1"> Tecnologo  <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="l1"> Licenciado  <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p1"> Pos graduado  <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p2"> Mestrado  <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p3"> Doutorado  <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Médio <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="b1"> Bacharel <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="t1"> Tecnologo <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="l1"> Licenciado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="p1"> Pos graduado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="p2"> Mestrado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="p3"> Doutorado <br>
                 </div>
 
-                <div id="experiencia1">
+                <div>
                     <label for="esperiencia">Qual foi a sua experiencia com programação:</label>
-                    <input type="range" id="experiencia" min="1" max="50" oninput="display.value=value" onchange="display.value=value">
-                    <input type="text" id="display" value="0" oninput="experiencia.value=value" onchange="experiencia.value=value" maxlength="3" size="3">
+                    <input type="range" id="experiencia" min="1" max="50" oninput="display.value=value"
+                        onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                        onchange="experiencia.value=value" maxlength="3" size="3">
                 </div>
-    
-                <div id="experiencia2">
-                    <label for="descricaoo">Descrição da Experiência: </label><br>
-                    <textarea id="descricao" cols="70" rows="5" placeholder="Descreva as Tecnologias cpnhecidas: "></textarea>
+
+                <div>
+                    <label for="descricao">Descrição da Experiência: </label><br>
+                    <textarea id="descricao" cols="70" rows="5"
+                        placeholder="Descreva as Tecnologias conhecidas: "></textarea>
                 </div>
-        
+
                 <div>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
                 </div>
-
-            </div>
             </form>
-
-
-
+        </div>
     </main>
     <footer>
     </footer>
