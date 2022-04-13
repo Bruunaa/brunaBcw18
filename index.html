@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
+    <!--Cabeçalho-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="./js/action.js"></script>
     <title>Página de Start BCW18</title>
-
 </head>
 
 <body>
     <div class="header">
         <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
         <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
-        <p>Turma de desenvolvimento Web Full Stack da Soul Code Academy</p>
+        <p>Turma de desenvolvimento Web Full Stack da SoulCode Academy</p>
     </div>
     <header class="topnav">
         <ul>
@@ -38,7 +37,8 @@
                         <img src="/img/imagem3.jpg" alt="Fase 1">
                     </a>
                     <div class="desc">
-                        Inscrição no site oficial,execução do teste de lógica, curso da trilha zero e montagem do Pitch.
+                        Inscrição no site oficial, execução do teste de lógica,
+                        curso da trilha zero e montagem do Pitch.
                     </div>
                 </div>
             </div>
@@ -49,8 +49,9 @@
                         <img src="/img/imagem2.jpg" alt="Fase 2">
                     </a>
                     <div class="desc">
-                        Trilha 0 e entrevista com o recrutador para avaliação da bolsa, nesta fase se analisa a
-                        elegibilidade para a bolsa de estudos perante os clientes e o candidato.
+                        Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
+                        nesta fase se analisa a elegibilidade para a bolsa de estudos
+                        perante os clientes e o candidato.
                     </div>
                 </div>
             </div>
@@ -61,68 +62,61 @@
                         <img src="/img/imagem1.jpg" alt="Fase 3">
                     </a>
                     <div class="desc">
-                        Uma dinâmica gameficada onde em grupo tinhamos que resolver alguns testes para conseguir enfim,
-                        recuprar os dados da empresa hackeada.
+                        Dinâmica em grupo com a realização de teste on-line e
+                        convocação dos alunos aprovados.
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="divisorbase" id="cadastro">
             <form action="#" method="">
                 <div>
-                    <input type="hidden" id="id"> <!-- Trás uma informação semprecisar mostrar na tela -->
+                    <input type="hidden" id="id">
                 </div>
                 <div>
                     <label for="nome">Nome: </label>
-                    <input type="text" id="nome" placeholder="Entre com o seu nome: ">
+                    <input type="text" id="nome" placeholder="Entre com seu nome">
                 </div>
-
                 <div>
-                    <label for="email">E-mail: </label>
-                    <input type="email" id="email" placeholder="Entre com o seu email">
+                    <label for="email">E-Mail: </label>
+                    <input type="email" id="email" placeholder="Entre com seu e-mail">
                 </div>
-
                 <div>
                     <label for="nascimento">Data de Nascimento: </label>
                     <input type="date" id="nascimento">
                 </div>
-
                 <div>
-                    <input type="checkbox" id="deficiencia" checked>
+                    <input type="checkbox" id="deficiencia">
                     <label for="deficiencia">Deficiencia </label>
                 </div>
-
                 <div>
-                    <label for="senha">Senha:</label>
+                    <label for="senha">Senha: </label>
                     <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
-                </div> <br>
-
-                <div>
-                    <label for="escolaridade">Nível Escolar:</label><br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="f1"> Fundamental <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="m1"> Médio <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="b1"> Bacharel <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="t1"> Tecnologo <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="l1"> Licenciado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p1"> Pos graduado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p2"> Mestrado <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="p3"> Doutorado <br>
                 </div>
-
                 <div>
-                    <label for="esperiencia">Qual foi a sua experiencia com programação:</label>
-                    <input type="range" id="experiencia" min="1" max="50" oninput="display.value=value"
+                    <label for="escolaridade">Nível Escolar:</label>
+                    <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental<br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Médio <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharel <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="L1"> Licenciado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P1"> Pós Graduado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P2"> Mestrado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P3"> Doutorado <br>
+                </div>
+                <div>
+                    <label for="experiencia">Qual foi sua experiência com programação:</label>
+                    <input type="range" id="experiencia" min="5" max="50" oninput="display.value=value"
                         onchange="display.value=value">
                     <input type="text" id="display" value="0" oninput="experiencia.value=value"
                         onchange="experiencia.value=value" maxlength="3" size="3">
                 </div>
-
                 <div>
                     <label for="descricao">Descrição da Experiência: </label><br>
-                    <textarea id="descricao" cols="70" rows="5"
-                        placeholder="Descreva as Tecnologias conhecidas: "></textarea>
+                    <textarea id="descricao" cols="70" rows="5" placeholder="Entre com as tecnologias"></textarea>
                 </div>
-
                 <div>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
@@ -131,6 +125,7 @@
         </div>
     </main>
     <footer>
+
     </footer>
 </body>
 
