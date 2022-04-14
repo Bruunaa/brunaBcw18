@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!--Cabeçalho-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +12,24 @@
     <script src="./js/action.js"></script>
     <title>Página de Start BCW18</title>
 </head>
+
 <body>
-    <div class="header">
-        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
-        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
-        <p>Turma de desenvolvimento Web Full Stack da SoulCode Academy</p>
-    </div>
-    <header class="topnav">
-        <ul>
-            <li><a href="#cadastro">Cadastro</a></li>
-            <li><a href="#trajetoria">Trajetória</a></li>
-            <li><a href="#dicas">Dicas</a></li>
-            <li><a href="#trabalho">Orientações</a></li>
-        </ul>
+    <header>
+        <div class="header">
+            <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+            <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+            <p>Turma de desenvolvimento Web Full Stack da SoulCode Academy</p>
+        </div>
+        <div class="topnav">
+            <ul>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#trabalho">Orientações</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        
         <div class="row" id="trajetoria">
             <div class="column">
                 <h1>Primeira Fase</h1>
@@ -109,20 +110,28 @@
                 </div>
                 <div class="card">
                     <h3>Java Spring</h3>
-                    <div class="img"><p>Hibernate</p></div>
-                    <div class="img"><p>Spring Boot</p></div>
-                    <div class="img"><p>MVC</p></div>
+                    <div class="img">
+                        <p>Hibernate</p>
+                    </div>
+                    <div class="img">
+                        <p>Spring Boot</p>
+                    </div>
+                    <div class="img">
+                        <p>MVC</p>
+                    </div>
                 </div>
                 <div class="card">
                     <h3>Siga-me...</h3>
                     <p>Linkedin.com/SoulCodeAcademy</p>
                 </div>
             </div>
-        </div>        <div class="formContainer" id="cadastro">
+        </div>
+        <div class="formContainer" id="cadastro">
             <form action="#" method="">
                 <div>
                     <input type="hidden" id="id">
                 </div>
+
                 <div class="formRow">
                     <div class="col-20"><label for="nome">Nome: </label></div>
                     <div class="col-70"> <input type="text" id="nome" placeholder="Entre com seu nome"></div>
@@ -131,26 +140,24 @@
                     <div class="col-20"><label for="email">E-Mail: </label></div>
                     <div class="col-70"><input type="email" id="email" placeholder="Entre com seu e-mail"></div>
                 </div>
-
                 <div class="formRow">
-                    <div class="col-20"><label for="nascimento">Data de Nascimento</label></div>
+                    <div class="col-20"><label for="nascimento">Data de Nascimento: </label></div>
                     <div class="col-70"><input type="date" id="nascimento"></div>
                 </div>
-
                 <div class="formRow">
                     <div class="col-20"><label for="deficiencia">Deficiencia </label></div>
                     <div class="col-70"><input type="checkbox" id="deficiencia"></div>
                 </div>
                 <div class="formRow">
                     <div class="col-20"><label for="senha">Senha: </label></div>
-                    <div class="col-70"><input type="password" id="senha" placeholder="Entre com a senha"
-                            maxlength="14"></div>
+                    <div class="col-70">
+                        <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
+                    </div>
                 </div>
                 <div class="formRow">
-                    <div class="col-20"><label for="escolaridade">Nível Escolar:</label>
-                    </div>
+                    <div class="col-20"><label for="escolaridade">Nível Escolar:</label></div>
                     <div class="col-70">
-                        <input type="radio" name="escolaridade" id="escolaridade" value="F1">Fundamental<br>
+                        <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental<br>
                         <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Médio <br>
                         <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharel <br>
                         <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
@@ -169,23 +176,50 @@
                         </div>
                     </div>
                     <div class="formRow">
-                        <div class="col-20"> <label for="descricao">Descrição da Experiência: </label><br></div>
+                        <div class="col-20"><label for="descricao">Descrição da Experiência: </label><br></div>
                         <div class="col-70">
                             <textarea id="descricao" cols="70" rows="5"
                                 placeholder="Entre com as tecnologias"></textarea>
                         </div>
                     </div>
                     <div class="formRow">
-                        <div class="col-70"> <input type="submit" value="Enviar">
+                        <div class="col-70">
+                            <input type="submit" value="Enviar">
                             <input type="reset" value="Limpar">
                         </div>
                     </div>
             </form>
         </div>
     </main>
-    <footer class="footer">
-        Direitos Reservados a SoulCode Academy
-        Alameda Santos VIP Coowork 1117 Jardins São Paulo - SP
+    <footer>
+        <div class="footer">
+            <div class="footerSocial">
+                <div style="flex-grow: 1;">
+                    <img src="./img/icone1.png" alt="">
+                </div>
+                <div style="flex-grow: 1;">
+                    <img src="./img/icone2.png" alt="">
+                </div>
+                <div style="flex-grow: 1;">
+                    <img src="./img/icone3.png" alt="">
+                </div>
+                <div style="flex-grow: 1;">
+                    <img src="./img/icone 4.png" alt="">
+                </div>
+                <div style="flex-grow: 1;">
+                    <img src="./img/icone5.png" alt="">
+                </div>
+                <div style="flex-grow: 1;">
+                    <img src="./img/icone6.png" alt="">
+                </div>
+                <div style="flex-grow: 12;">
+                    <p>
+                        Direitos Reservados a SoulCode Academy <br>
+                        Alameda Santos VIP Cooworking 1117 Jardins São Paulo - SP
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
